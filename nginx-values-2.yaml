@@ -240,11 +240,11 @@ controller:
   # -- Node tolerations for server scheduling to nodes with taints
   ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
   ##
-  tolerations: []
-   - key: "key"
-     operator: "Equal"
-     value: "hi-mom"
-     effect: "NoSchedule"
+  tolerations: 
+  - key: "key"
+    operator: "Equal"
+    value: "hi-mom"
+    effect: "NoSchedule"
 
   # -- Affinity and anti-affinity rules for server scheduling to nodes
   ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
